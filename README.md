@@ -1,6 +1,7 @@
 # RandomGameStarter
 
-På rad #1 I Program.cs behöver du byta ut "string startFolder = @"E:\SteamLibrary\steamapps\common";" till en sökväg som passar din dator.
+På rad #1 I Program.cs behöver du byta ut string startFolder = @"E:\SteamLibrary\steamapps"; till en sökväg som passar din dator.
 
-När du startar appen så kommer den att stoppa alla dina spel i en lista, sen slumpa fram ett spel och starta det.
-Än så länge är inte appen smart nog att filtrera bort "updater, debug, patcher, installer" etc, utan den letar bara efter exe filer. 
+Appen kommar att stoppa alla dina gameIds i en lista och slumpa fram ett gameId. 
+Sen kommer den starta CMD, och därifrån starta spelet med det slumpade gameId.
+Appen kommer också att starta steam om steam inte är igång!
